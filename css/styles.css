@@ -1,0 +1,686 @@
+/* ============== COMMON STYLES ============== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+img {
+  display: block;
+}
+.link {
+  text-decoration: none;
+}
+.list {
+  list-style-type: none;
+}
+button {
+  cursor: pointer;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+    font-family: "Mashetic", sans-serif;
+    background-color: #252245;
+    color: #FFFFFF;
+  }
+
+.container {
+    /* width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0; */
+}
+
+/* Загальні стилі для кнопок */
+.btn {
+    /* height: 35px; */
+    font-size: 12px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    transition: background-color 0.3s;
+    padding: 10px 8px;
+    letter-spacing: 0.03em;
+    background: linear-gradient(90deg, #3b34a1 0%, #e1400f 100%);
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.btn-primary {
+    background-color: #007bff;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+}
+
+.btn-secondary:hover {
+    background-color: #565e64;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Мобільні стилі */
+@media (max-width: 768px) {
+ /* ------------------------HEADER-------------------- */
+    .nav{
+        display: none;
+
+    }
+    .logo{
+        width: 100%;
+        text-align: center; 
+    }
+    .nav-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px; 
+        margin-top: 28px;
+    }
+    .logo {
+        display: block;
+        margin: 0 auto; 
+        color: #DF3D0F;
+        font-size: 18px;
+    }
+    .mobile-open-btn-icon{
+        margin-top: 6px;
+        line-height: 0;
+    }
+    .header-container {
+        margin-top: 70px;
+        flex-direction: row; 
+        align-items: center; 
+        justify-content: flex-start;
+    }
+
+/* ------------------------HERO-------------------- */
+    .container{
+        margin: 0 15px;
+    }
+    .hero {
+        text-align: center;
+        margin-top: 63px;
+    }
+    .hero-title {
+        font-weight: 400;
+        font-size: 28px;
+        margin-bottom: 21px;
+        line-height: 1.5; 
+      }
+      
+      .hero-text {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        margin-bottom: 130px;
+        line-height: 1.5;
+        letter-spacing: 1.5px;
+      }
+    .img-contai{
+        height: 346px; 
+        background-image: url(/images/hero.png);
+        background-size: cover; 
+        background-position: center; 
+        background-repeat: no-repeat; 
+        width: 404px; 
+        padding: 0;
+        margin: 0;
+    }
+
+    .btn-container {
+        display: flex; 
+        flex-direction: column; 
+        gap: 39px;
+        align-items: center;
+        margin-top: 63px;
+        margin-bottom: 15px;
+        
+      }
+    .hero-btn {
+        width: 292px;
+        height: 73px;
+        font-size: 24px;
+        border: none;
+        background-color: #007bff;
+        color: white;
+        text-decoration: none;
+        cursor: pointer;
+        display: inline-block;
+        transition: background-color 0.3s;
+        padding: 10px 8px;
+        letter-spacing: 0.03em;
+        background: linear-gradient(90deg, #3b34a1 0%, #e1400f 100%);
+    }
+    .btn-get-started{
+        background: #252245;
+        border: solid;
+        border-image: linear-gradient(90deg, #3b34a1 0%, #e1400f 100%) 1;
+    }
+
+/* ------------------------SERVICES-------------------- */
+    .services{
+        padding: 0 90px;
+    }   
+    .services-list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 44px;
+        margin: 90px auto;
+      }
+      
+      .services-item {
+        border-radius: 15px;
+        width: 334px;
+        /* height: 228px; */
+        background-color: rgba(59, 52, 160, 0.27);
+        padding: 24px 38px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 30px;
+        margin-bottom: 63px;
+      }
+ 
+      .services-text {
+        font-weight: 200;
+        font-size: 24px;
+        text-align: center;
+        margin-top: 100px;
+        width: 286px;  
+      }
+      .services-img {
+        width: 150px;
+        height: 150px;
+        border-radius: 100%;
+        background-color: #f77307;
+        position: absolute;
+        top: 0;
+        transform: translateY(-35%);
+        padding-top: 60px;
+      }
+
+       /* ------------------------ABOUT US------------------- */
+       .about-us-list {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 49px;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(59, 52, 160, 0.27);
+        padding-top: 58px;
+        padding-bottom: 99px;
+      }
+      .about-us-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+      }
+      .about-us-icon {
+        width: 88px;
+        height: 88px;
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        line-height: 0;
+      }
+      .blue {
+        background-color: #4171c4;
+      }
+      .green {
+        background-color: #6ccc3e;
+      }
+      .red {
+        background-color: #e5333d;
+      }
+      .violet {
+        background-color: #8555c1;
+      }
+      .about-us-title {
+        font-weight: 400;
+        font-size: 38px;
+        color: #e1400f;
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        letter-spacing: 0.03em;
+
+      }
+      .about-us-description {
+        font-weight: 400;
+        font-size: 14px;
+        align-items: center;
+      }
+
+
+      .about {
+        margin-top: 131px;
+        gap: 109px;
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        justify-content: center; 
+        text-align: center; 
+      }
+      
+      .about-img {
+        display: none;
+      }
+
+      .about-imgg {
+        border-radius: 35px;
+        width: 399px;
+        height: 355px;
+        background-color: #f77307;
+      }
+      
+      .about-wrapper {
+        width: 100%; 
+        max-width: 943px; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center; 
+      }
+      
+      .about-title {
+        max-width: 508px;
+        font-weight: 200;
+        font-size: 38px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .about-text {
+        font-family: "Poppins";
+        font-weight: 200;
+        font-size: 24px;
+        margin-top: 10px;
+        letter-spacing: 1.2px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .about-description {
+        font-family: "Poppins";
+        font-weight: 200;
+        font-size: 18px;
+        margin-top: 23px;
+        letter-spacing: 1px;
+        
+      }
+      
+      .about-btn {
+        margin-top: 23px;
+        padding: 12px 40px;
+        background: linear-gradient(90deg, #3b34a1 0%, #e1400f 100%);
+        font-weight: 400;
+        font-size: 18px;
+        text-align: center;
+        color: #fff;
+        border: none;
+        outline: none;
+      }
+      
+      .about-btn:hover,
+      .about-btn:focus {
+        color: black;
+      }
+
+    
+}
+
+
+/* Десктопні стилі */
+@media (min-width: 769px) {
+/* ------------------------HEADER-------------------- */
+    nav ul li {
+        margin-left: 30px;
+    }
+    .header-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between; 
+        padding: 10px;
+        margin: 58px 96px 96px 79px;
+    }
+    .logo {
+        color: #DF3D0F;
+        font-size: 26px;
+        text-align: center;
+        flex-shrink: 0; 
+    }
+    .nav-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .nav {
+        margin-right: 34px;
+        
+    }
+    .nav ul {
+        list-style-type: none; 
+        padding: 0; 
+        margin: 0; 
+        display: flex; 
+        
+    }
+    .nav li {
+        margin-right: 34px; 
+    }
+    .header-list{
+        color: #FFFFFF;
+    }
+    .mobile-open-btn-icon {
+        display: none;
+    }
+
+/* ------------------------HERO-------------------- */
+    .container {
+        padding: 55px 90px;
+      }
+    .hero {
+        margin-top: 90px;
+        display: flex;
+        gap: 90px;
+        align-items: center;
+      } 
+      .hero-left {
+        width: 628px;
+      }
+      .img-container {
+        width: 550px;
+        height: 470px;
+        background-image: url(/images/hero.png);
+      }
+      .hero-title {
+        width: 628px;
+        font-weight: 400;
+        font-size: 48px;
+        margin-bottom: 21px;
+        line-height: 1.5; 
+      }
+      .hero-text {
+        width: 628px;
+        font-family: "Poppins", sans-serif;
+        font-weight: 200;
+        font-size: 24px;
+        margin-bottom: 130px;
+        line-height: 1.5;
+        letter-spacing: 1px;
+      }
+      .btn-container {
+        display: flex;
+        gap: 27px;
+      } 
+      .hero-btn {
+        width: 292px;
+        height: 73px;
+        font-size: 24px;
+        border: none;
+        background-color: #007bff;
+        color: white;
+        text-decoration: none;
+        cursor: pointer;
+        display: inline-block;
+        transition: background-color 0.3s;
+        padding: 10px 8px;
+        letter-spacing: 0.03em;
+        background: linear-gradient(90deg, #3b34a1 0%, #e1400f 100%);
+    }
+    .btn-get-started{
+        background: #252245;
+        border: solid;
+        border-image: linear-gradient(90deg, #3b34a1 0%, #e1400f 100%) 1;
+    }
+      .hero-button:hover,
+      .hero-button:focus {
+        background: linear-gradient(90deg, #3b34a1 0%, #e1400f 100%);
+      }
+
+ /* ------------------------SERVICES-------------------- */
+    .services{
+        padding: 0 90px ;
+    }   
+    .services-list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 44px;
+        margin: 90px auto;
+      }
+      
+      .services-item {
+        border-radius: 15px;
+        width: 334px;
+        height: 228px;
+        background-color: rgba(59, 52, 160, 0.27);
+        padding: 24px 38px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 0;
+      }
+ 
+      .services-text {
+        font-weight: 200;
+        font-size: 24px;
+        text-align: center;
+        margin-top: 114px;
+        width: 286px;  
+      }
+      .services-img {
+        width: 150px;
+        height: 150px;
+        border-radius: 100%;
+        background-color: #f77307;
+        position: absolute;
+        top: 0;
+        transform: translateY(-35%);
+      }
+
+ /* ------------------------ABOUT US------------------- */
+      .about-us-list {
+        width: 100%;
+        display: flex;
+        gap: 49px;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(59, 52, 160, 0.27);
+        padding-top: 58px;
+        padding-bottom: 58px;
+      }
+      .about-us-item {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+      }
+      .about-us-icon {
+        width: 88px;
+        height: 88px;
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        line-height: 0;
+      }
+      .blue {
+        background-color: #4171c4;
+      }
+      .green {
+        background-color: #6ccc3e;
+      }
+      .red {
+        background-color: #e5333d;
+      }
+      .violet {
+        background-color: #8555c1;
+      }
+      .about-us-title {
+        font-weight: 400;
+        font-size: 38px;
+        color: #e1400f;
+        margin-bottom: 10px;
+      }
+      .about-us-description {
+        font-weight: 400;
+        font-size: 14px;
+      }
+      
+      .about {
+        margin-top: 216px;
+        display: flex;
+        gap: 109px;
+      }
+      
+      .about-img {
+        margin-left: 173px;
+        border-radius: 35px;
+        width: 515px;
+        height: 457px;
+        background-color: #f77307;
+      }
+      .about-imgg {
+        display: none;
+      }
+      
+      .about-wrapper {
+        width: 628px;
+      }
+      
+      .about-title {
+        max-width: 508px;
+        font-weight: 200;
+        font-size: 38px;
+      }
+      
+      .about-text {
+        font-family: "Poppins";
+        font-weight: 200;
+        font-size: 24px;
+        margin-top: 10px;
+        letter-spacing: 1.2px;
+      }
+      
+      .about-description {
+        font-family: "Poppins";
+        font-weight: 200;
+        font-size: 18px;
+        margin-top: 23px;
+        letter-spacing: 1px;
+      }
+      
+      .about-btn {
+        margin-top: 23px;
+        padding: 12px 40px;
+        background: linear-gradient(90deg, #3b34a1 0%, #e1400f 100%);
+        font-weight: 400;
+        font-size: 18px;
+        text-align: center;
+        color: #fff;
+        border: none;
+        outline: none;
+      }
+      
+      .about-btn:hover,
+      .about-btn:focus {
+        color: black;
+      }
+
+
+    /* Statistics Section */
+    .statistics {
+        padding: 60px 0;
+    }
+
+    .stats-grid {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    /* Main Content */
+    .features {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .feature-box {
+        width: 30%;
+    }
+
+    /* Resources Section */
+    .resources {
+        padding: 60px 0;
+    }
+
+    .resource-grid {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .resource-box {
+        width: 30%;
+    }
+
+    /* Contact Form */
+    .contact-form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    #message {
+        grid-column: 1 / 3;
+    }
+
+
+}
